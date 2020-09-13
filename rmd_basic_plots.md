@@ -20,17 +20,9 @@ plot_df = tibble(
 First we show a histogram of the `x` variable.
 
 ``` r
-ggplot(plot_df, aes(x = x)) + geom_histogram()
+ggplot(plot_df, aes(x = y)) + geom_histogram()
 ```
 
     ## `stat_bin()` using `bins = 30`. Pick better value with `binwidth`.
 
-![](rmd_basic_plots_files/figure-gfm/x_hist-1.png)<!-- -->
-
-Next we show a scatterplot of `y` vs `x`.
-
-``` r
-ggplot(plot_df, aes(x = x, y = y)) + geom_point()
-```
-
-![](rmd_basic_plots_files/figure-gfm/yx_scatter-1.png)<!-- -->
+![](rmd_basic_plots_files/figure-gfm/y_hist-1.png)<!-- -->
